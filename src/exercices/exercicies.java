@@ -1,5 +1,11 @@
 package exercices;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class exercicies {
 
     //reverse word
@@ -66,4 +72,15 @@ public class exercicies {
         }
         return true;
     }
+
+    //delete duplicate
+    Integer[] arr = {1, 1, 3, 2, 4,4,5};
+    List<Integer> deleteDuplicate = Arrays.asList(arr);
+    
+    Set<Integer> conjuntoSinDuplicados = new HashSet<>(deleteDuplicate);
+
+    // Convertir de nuevo a lista
+    List<Integer> listaSinDuplicados = new ArrayList<>(conjuntoSinDuplicados);
+
+    //System.out.println("Lista sin duplicados: " + listaSinDuplicados);
 }
