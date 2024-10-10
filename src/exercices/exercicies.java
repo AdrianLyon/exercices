@@ -83,4 +83,16 @@ public class exercicies {
     List<Integer> listaSinDuplicados = new ArrayList<>(conjuntoSinDuplicados);
 
     //System.out.println("Lista sin duplicados: " + listaSinDuplicados);
+
+    //edit missing number
+    static int missingNumber(int n, int arr[]) {
+        int result = n*(n+1)/2;
+        int sum = 0;
+
+        for (int i : arr){
+            sum += i;
+        }
+
+        return result - sum;
+    }
 }
