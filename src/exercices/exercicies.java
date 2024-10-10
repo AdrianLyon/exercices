@@ -73,6 +73,20 @@ public class exercicies {
         return true;
     }
 
+    //ispalindrome with acent
+    public static boolean isPalindromeWithLoop(String word){;
+        word = Normalizer.normalize(word, Normalizer.Form.NFD).replaceAll("[\\p{InCombiningDiacriticalMarks}]", "").replaceAll("\\s", "").toLowerCase();
+
+        int i = 0, j = word.length()-1;
+
+        while(i<j){
+            if (word.charAt(i) != word.charAt(j)) return false;
+            i++;
+            j--;
+        }
+        return true;
+    }
+
     //delete duplicate
     Integer[] arr = {1, 1, 3, 2, 4,4,5};
     List<Integer> deleteDuplicate = Arrays.asList(arr);
