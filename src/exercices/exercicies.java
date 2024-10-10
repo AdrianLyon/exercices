@@ -140,4 +140,22 @@ public class exercicies {
 
         return result;
     }
+
+    //factorial
+    public static int factorialIterative(int n) {
+        if (n == 0) return 1;
+
+        int result = 1;
+
+        for (int i = 1; i <= n; i++) {
+            result *= i;
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int n = 5; // Cambia este valor para otros números
+        System.out.println("Factorial de " + n + " es: " + factorialIterative(n));
+    }
 }
